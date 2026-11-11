@@ -1,0 +1,8 @@
+import { useState } from 'react';
+import { Moon, BellRing, ShieldCheck } from 'lucide-react';
+
+export default function Settings() {
+  const [darkPreview, setDarkPreview] = useState(false);
+  const [notifications, setNotifications] = useState(true);
+  return <div className="page-stack settings-page"><div><p className="muted">Manage preferences for this demo workspace.</p></div><section className="panel settings-panel"><div className="setting-row"><div className="setting-icon"><Moon size={19} /></div><div className="setting-copy"><strong>Dark appearance preview</strong><small>Demo toggle only; it does not change the full application theme.</small></div><label className="switch"><input type="checkbox" checked={darkPreview} onChange={e => setDarkPreview(e.target.checked)} /><span /></label></div><div className="setting-row"><div className="setting-icon"><BellRing size={19} /></div><div className="setting-copy"><strong>Notifications</strong><small>Turn demo notification preference on or off.</small></div><label className="switch"><input type="checkbox" checked={notifications} onChange={e => setNotifications(e.target.checked)} /><span /></label></div><div className="setting-row"><div className="setting-icon"><ShieldCheck size={19} /></div><div className="setting-copy"><strong>Administrator access</strong><small>Protected routes use a demo React context login, not production security.</small></div><span className="badge success">Demo admin</span></div><div className="settings-result">Appearance preview: <strong>{darkPreview ? 'Dark' : 'Light'}</strong> · Notifications: <strong>{notifications ? 'On' : 'Off'}</strong></div></section></div>;
+}

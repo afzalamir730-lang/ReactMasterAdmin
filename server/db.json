@@ -1,0 +1,15 @@
+{
+  "students": [
+    { "id": "STU-001", "name": "Amir Afzal", "email": "amir@example.com", "rollNo": "2025-UOB-0006", "department": "Computer Science", "semester": "2nd", "fees": 12000, "status": "Active" },
+    { "id": "STU-002", "name": "Ali Khan", "email": "ali@example.com", "rollNo": "2025-UOB-0010", "department": "Computer Science", "semester": "2nd", "fees": 12000, "status": "Active" },
+    { "id": "STU-003", "name": "Sajjad Ahmad", "email": "sajjad@example.com", "rollNo": "2025-UOB-0015", "department": "Software Engineering", "semester": "3rd", "fees": 14000, "status": "Active" },
+    { "id": "STU-004", "name": "Ahmad Khan", "email": "ahmad@example.com", "rollNo": "2025-UOB-0020", "department": "Information Technology", "semester": "1st", "fees": 10000, "status": "Pending" },
+    { "id": "STU-005", "name": "Sara Noor", "email": "sara@example.com", "rollNo": "2025-UOB-0025", "department": "Computer Science", "semester": "4th", "fees": 15000, "status": "Active" }
+  ],
+  "courses": [
+    { "id": "CRS-01", "title": "Database Management Systems", "code": "CS-204", "teacher": "Mr. Rahat Ali Shah", "students": 42, "semester": "2nd" },
+    { "id": "CRS-02", "title": "Object Oriented Programming", "code": "CS-202", "teacher": "Ms. Nadia", "students": 38, "semester": "2nd" },
+    { "id": "CRS-03", "title": "Web Development", "code": "CS-210", "teacher": "Mr. Hamid", "students": 35, "semester": "3rd" },
+    { "id": "CRS-04", "title": "Data Structures", "code": "CS-206", "teacher": "Dr. Imran", "students": 40, "semester": "2nd" }
+  ]
+}
